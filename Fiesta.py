@@ -1,11 +1,8 @@
 class Fiesta:
 
-    def __init__(self,numeroPersonas,costoDecoracion,bonoExtra,costoComidaPersona,decora):
+    def __init__(self,numeroPersonas):
         self.numeroPersonas = numeroPersonas
-        self.costoDecoracion = costoDecoracion
-        self.bonoExtra = bonoExtra
-        self.costoComidaPersona = costoComidaPersona
-        self.decora = decora
+  
 
 #------------------------------------------------------------
 
@@ -17,43 +14,35 @@ class Fiesta:
 
 #-----------------------------------------------------------
 
-    def get_costoDecoracion(self):
-        return self.numeroPersonas
-    
-    def set_costoDecoracion(self,costoDecoracion):
-        self.costoDecoracion = costoDecoracion
-#-----------------------------------------------------------
-
-    def get_bonoExtra(self):
-        return self.bonoExtra
-    
-    def set_bonoExtra(self,bonoExtra):
-        self.bonoExtra = bonoExtra
-
-#--------------------------------------------------------
-
-    def get_costoComidaPersona(self):
-        return self.numeroPersonas
-    
-    def set_costoComidaPersona(self,costoComidaPersona):
-        self.costoComidaPersona = costoComidaPersona
-
-#----------------------------------------------------------
-
-    def get_decora(self):
-        return self.decora
-    
-    def set_decora(self,decora):
-        self.decora = decora
-
-#---------------------------------------------------------
 
 
 
-    def Fiestaa(numeroPersonas):
+
+    def nropersonas(numeroPersonas):
         numeroPersonas = input(int("Ingrese Numero de Personas: "))
         while True:
             if numeroPersonas > 0:
-                pass
+                break
             else:
                 numeroPersonas <= 0
+
+    
+    def bonoExtra(numeroPersonas):
+        while True:
+            if numeroPersonas > 12:
+                print("Debe pagar un bono de 5000")
+            else:
+                break
+        
+
+    def costoComida(numeroPersonas):
+        comida = numeroPersonas*3500
+            
+
+    def costoDecoracion(numeroPersonas):
+        while True:
+            if numeroPersonas > 20:
+                print("El costo por personas sera de $22000")
+            elif numeroPersonas:
+                cdecoracion = numeroPersonas*16000
+                print("El costo por persona sera de $16000")

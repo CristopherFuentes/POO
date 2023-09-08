@@ -1,4 +1,5 @@
-class FiestaGala:
+import Fiesta
+class FiestaGala(Fiesta):
 
     def __init__(self,costoFijoPersona,opcionSaludable):
         self.costoFijoPersona = costoFijoPersona
